@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="CSS/style.css" />
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <title>Vishal's Portfolio.</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+  </style>
+</head>
+
+<body style="background-color: black; position: relative;">
+
+  <ul id="atMe">
+    <li> <a aria-label="Github" href="https://github.com/PV1shal" target="_blank"><img src="./images/github_inverted.png" alt="imgage not found"></a> </li>
+    <li><a aria-label="LinkedIn" href="https://linkedin.com/in/vishal-pugazhendhi" target="_blank"><img src="./images/linkedin.png" alt="imgage not found"/></a></li>
+  </ul>
+
+  <div class="homeDiv" id="homeDiv">
+    <nav>
+      <div class="tabs">
+        <div style="margin-right: 100px;"><button class="navButtons" onclick="location.href ='#homeDiv'">Home</button>
+        </div>
+        <div style="margin-right: 100px;"><button class="navButtons" onclick="location.href ='#aboutMe'">About
+            Me</button></div>
+        <div style="margin-right: 100px;"><button class="navButtons" onclick="window.open('https://drive.google.com/file/d/1Vcs7niXJa30X2IO9u3Kqw5dDxGeV1P7C/view?usp=sharing', '_blank')">Resume</button>
+        </div>
+        <div style="margin-right: 100px;"><button class="navButtons" onclick="location.href ='#contactMe'">Contact
+            Me</button></div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="homeBody">
+    <div class="typer">
+      <p>
+        I am,<br> <span class="typer-typing"></span><span class="cursor">&nbsp;</span>
+      </p>
+    </div>
+
+    <div class="spaceBG">
+      <img src="./images/2474066-astroman.png" class="spaceman" alt="imgage not found">
+      <img src="./images/2474066-background.png" class="spacemanBG" id="spaceman" alt="imgage not found">
+    </div>
+  </div>
+
+
+  <div class="aboutMe" id="aboutMe">
+    <div class="info">
+      <div class="infoHeader">
+        About Me
+      </div><br>
+      <p>Hi, this is Vishal Pugazhendhi. I am currently a student at Northeastern University, Seattle and a Techno
+        enthusiast looking for an internship. I
+        love working with the latest technologies and expressing my creativity through them.
+      </p>
+      <p>
+        I stand by the quote <i style="font-family: 'Lobster Two', cursive; font-size: 30px;">'Smooth seas do not make
+          skillful sailors'</i>, so if you got any challenging problem,
+        contact me and consider it done.
+      </p>
+      <div style="display: flex; position: absolute;">
+        <p id="skillB" class="infoP" onclick='skill("skill")'> Skills</p>
+        <p id="eduB" class="infoP" onclick='skill("edu")'>Education</p>
+        <p id="expB" class="infoP" onclick='skill("exp")'>Experience</p>
+      </div>
+
+      <div id="skill" style="display: none;">
+        <ul>
+          <li>
+            <span>
+              Web Development
+            </span><br>
+            ReactJS<br>
+            HTML<br>
+            CSS<br>
+          </li>
+          <li>
+            <span>
+              Backend framework
+            </span><br>
+            SpringBoot
+          </li>
+          <li>
+            <span>
+              Programming languages
+            </span><br>
+            JAVA<br>
+            C/C++<br>
+            Pythong<br>
+          </li>
+        </ul>
+      </div>
+
+      <div id="edu" style="display: none;">
+        <ul>
+          <li>
+            <span>
+              Masters in Computer Science
+            </span><br>
+            Northeastern University<br>
+            2022 - 2024
+          </li>
+          <li>
+            <span>Bachelors in Computer Science</span><br>
+            Vellore Institute of Technology - India <br>
+            2018 - 2022
+          </li>
+        </ul>
+      </div>
+
+      <div id="exp" style="display: none;">
+        <ul>
+          <li>
+            <span>Internship</span><br>
+            <b>Verizon</b><br>
+            Feb' 14 2022 - Jun 30' 2022 (4.5 Months)
+          </li>
+        </ul>
+      </div>
+
+    </div>
+    <div style="margin-left: 1%; position: relative; ">
+      <img src="./images/AboutMe.png" id="eduImg" style="overflow: hidden;width: 90%;height: 70%;margin-left: 20%;" alt="imgage not found">
+    </div>
+  </div>
+
+
+  <div class="contactMe" id="contactMe">
+    <table>
+      <tr>
+        <td rowspan="2" style="font-size: 4rem; font-weight: 1000; width: 30%;">Contact Me:
+        </td>
+        <td><input type="text" placeholder="Enter Name" id="name"></td>
+      </tr>
+      <tr>
+        <td><input type="text" placeholder="Enter Email" id="email"></td>
+      </tr>
+
+      <tr>
+        <td style="font-size: 20px; font-weight: bold;">
+          <img src="./images/email.png" style="width: 10%; height: 5%; margin-bottom: -1.7% ;overflow: hidden;" alt="imgage not found">
+          vishal.pugazhendhi@gmail.com
+        </td>
+        <td rowspan="3">
+          <textarea id="msg" placeholder="Enter Message" maxlength="500"></textarea>
+          <span id="current"> 0 </span>
+          <samp id="max"> / 500</samp>
+        </td>
+      </tr>
+
+      <tr>
+        <td style="font-size: 20px; font-weight: bold">
+          <img src="./images/phone.png" style="width: 10%; margin-bottom: -1.7%; margin-right: -1% ;overflow: hidden;" alt="imgage not found">
+          +1 206-319-2681
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <button onclick="sendMail();">Send Message</button></a>
+        </td>
+      </tr>
+
+    </table>
+  </div>
+
+</body>
+
+<script src="./JS/aboutMe.js"></script>
+<script src="./JS/typingCSS.js"></script>
+<!-- <script src="/JS/scrollAnimation.js"></script> -->
+
+</html>

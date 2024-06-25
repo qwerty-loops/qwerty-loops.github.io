@@ -1,0 +1,12 @@
+{
+    "name": "cs5610_personal_web_site",
+    "engines": {
+        "node": "*"
+    },
+    "scripts": {
+        "start": "http-server"
+    },
+    "dependencies": {
+        "http-server": "*"
+    }
+}

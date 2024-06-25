@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css?family=Bebas Neue');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+.homeDiv {
+  height: 80px;
+  font-size: 60px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+}
+
+#atMe {
+  position: fixed;
+  top: 40%;
+  right: 10px;
+  padding: 0;
+  list-style: none;
+  z-index: 99;
+}
+
+#atMe li {
+  padding: 10px;
+}
+
+#atMe li a {
+  display: block;
+  border-radius: 30%;
+  background-color: rgb(77, 73, 73)
+}
+
+#atMe li a img {
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+}
+
+#atMe li a:hover img {
+  background: rgba(0, 0, 0, .2);
+}
+
+.navButtons {
+  border: none;
+  font-family: 'Bebas Neue';
+  letter-spacing: 3px;
+  color: white;
+  opacity: 0.4;
+  cursor: pointer;
+  font-size: 24px;
+  background-color: black;
+  overflow: hidden;
+  height: 50px;
+  width: 150px;
+  border-bottom: 5px solid transparent;
+}
+
+.navButtons:hover {
+  border-bottom: 5px solid #f80885;
+  transition: border-bottom-color 0.4s;
+  opacity: 1;
+}
+
+.homeBody {
+  display: flex;
+  position: relative;
+  /* width: 150%; */
+}
+
+
+/* Typer */
+
+.typer {
+  width: 50%;
+  justify-content: left;
+  margin-left: 5%;
+  margin-top: 10%;
+  position: absolute;
+}
+
+.typer p {
+  color: white;
+  font-family: 'Montserrat';
+  font-weight: 200;
+  font-size: 300%;
+  letter-spacing: 0.1rem;
+  overflow: hidden;
+}
+
+.typer p span.typer-typing {
+  color: #f80885;
+  font-weight: bold;
+  font-size: 120%;
+}
+
+.typer p span.cursor {
+  display: inline-block;
+  background-color: white;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+
+.typer p span.cursor.typing {
+  animation: none;
+}
+
+
+.spaceBG {
+  /* overflow: ; */
+  margin-top: 100px;
+  margin-left: 45%;
+  height: 100%;
+  width: 65%;
+  position: relative;
+  overflow: hidden;
+}
+
+.spacemanBG {
+  height: 100%;
+  width: 120%;
+  filter: brightness(0.8);
+}
+
+.spaceman {
+  height: 100%;
+  width: 110%;
+  filter: brightness(0.75);
+  position: absolute;
+  animation: spaceManFloat 5s infinite;
+  margin-left: 8%;
+}
+
+.aboutMe {
+  display: flex;
+  margin-top: 15%;
+  margin-right: 2%;
+  height: 650px;
+  position: relative;
+  padding-top: 5%;
+}
+
+.info {
+  color: white;
+  width: 60%;
+  margin-left: 3%;
+  font-family: 'Montserrat';
+  font-size: 22px;
+  position: inherit;
+}
+
+.info ul {
+  margin-top: 80px;
+}
+
+.info ul li {
+  list-style: none;
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  margin-left: 10px;
+}
+
+.info ul li span {
+  color: #ffc73c;
+  font-size: 24px;
+  margin-left: -20px;
+}
+
+.infoHeader {
+  font-family: 'Montserrat';
+  font-size: 3rem;
+  font-weight: 900;
+  border-bottom: 5px solid transparent;
+}
+
+.infoHeader::after {
+  border-bottom: 5px solid #ffc73c;
+  content: '';
+  display: block;
+  width: 290px;
+  height: 10px;
+}
+
+.infoP {
+  cursor: pointer;
+  margin-right: 30%;
+  margin-top: 5%;
+  font-weight: bold;
+  border-bottom: 5px solid transparent;
+}
+
+.infoP:hover {
+  border-bottom: 5px solid #ffc73c;
+  transition: border-bottom-color 0.5s;
+}
+
+.contactMe {
+  margin-top: 15%;
+  margin-bottom: 10%;
+  font-family: 'Montserrat';
+  color: white;
+  overflow: hidden;
+}
+
+.contactMe table {
+  width: 80%;
+  margin: auto;
+}
+
+.contactMe table button {
+  background-color: #f80885;
+  border-radius: 8px;
+  border-style: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 1000;
+  height: 50px;
+  padding: 10px 16px;
+}
+
+.contactMe table tr td {
+  padding-bottom: 15px;
+}
+
+.contactMe table button:hover {
+  background-color: green;
+  transition: 0.3s;
+}
+
+.contactMe table tr td input {
+  background-color: rgb(27, 25, 25);
+  height: 50px;
+  width: 100%;
+  border: none;
+  color: white;
+  font-size: 14px;
+  font-family: 'Montserrat';
+}
+
+.contactMe table tr td textarea {
+  background-color: rgb(27, 25, 25);
+  height: 300px;
+  width: 100%;
+  border: none;
+  color: white;
+  font-size: 20px;
+  font-family: 'Montserrat';
+}
+
+@keyframes blink {
+  0% {
+    background-color: white;
+  }
+
+  50% {
+    background-color: transparent;
+  }
+
+  100% {
+    background-color: white;
+  }
+}
+
+@keyframes spaceManFloat {
+  0% {
+    transform: translate(0, 0px);
+  }
+
+  50% {
+    transform: translate(0, 40px);
+    filter: brightness(1.25);
+  }
+
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+/* @keyframes spinClock {
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes spinAntiClock {
+  100% {
+    transform: rotate(-180deg);
+  }
+} */
