@@ -2,10 +2,10 @@ const typeTextSpan = document.querySelector(".typer-typing");
 const cursorSpan = document.querySelector(".cursor");
 
 const textArray = [
-  "Vishal Pugazhendhi.",
+  "Allen Sam Parayil.",
   "A Student.",
+  "A Data Scientist / Engineer / Analyst",
   "A Wannabe Software developer.",
-  "A Wannabe Web Developver.",
   "A Wannabe Game Developer.",
 ];
 const typingDelay = 100;
