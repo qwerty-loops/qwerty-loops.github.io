@@ -5,8 +5,7 @@ const textArray = [
   "Allen Sam Parayil.",
   "A Student.",
   "A Data Scientist / Engineer / Analyst",
-  "A Wannabe Software developer.",
-  "A Wannabe Game Developer.",
+  "A Wannabe Software developer."
 ];
 const typingDelay = 100;
 const erasingDelay = 200;
