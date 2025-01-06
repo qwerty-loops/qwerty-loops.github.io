@@ -144,7 +144,7 @@ html {
   height: 650px;
   position: relative;
   padding-top: 5%;
-  padding-bottom : 5%;
+  padding-bottom : 15%;
 }
 
 .info {
@@ -203,7 +203,7 @@ html {
 }
 
 .contactMe {
-  margin-top: 15%;
+  margin-top: 20%;
   margin-bottom: 10%;
   font-family: 'Montserrat';
   color: white;
